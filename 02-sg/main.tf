@@ -17,7 +17,7 @@ module "cluster" {
 }
 
 module "node" {
-  source         = "git::https://github.com/Anil-Nadikuda/terraform-aws-security-group.git?ref=main"
+  source         = "git::https://github.com/Anil-Nadikuda/terraform-aws-security-group-cp.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for eks node"
