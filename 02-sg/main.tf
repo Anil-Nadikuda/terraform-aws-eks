@@ -1,5 +1,5 @@
 module "ingress" {
-  source         = "git::https://github.com/Anil-Nadikuda/terraform-aws-security-group.git?ref=main"
+  source         = "git::https://github.com/Anil-Nadikuda/terraform-aws-security-group-cp.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for ingress controller"
@@ -8,7 +8,7 @@ module "ingress" {
 }
 
 module "cluster" {
-  source         = "git::https://github.com/Anil-Nadikuda/terraform-aws-security-group.git?ref=main"
+  source         = "git::https://github.com/Anil-Nadikuda/terraform-aws-security-group-cp.git?ref=main"
   project_name   = var.project_name
   environment    = var.environment
   sg_description = "SG for cluster"
